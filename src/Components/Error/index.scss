@@ -1,0 +1,16 @@
+.error {
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+    &__img {
+        color: #01afc8;
+        font-size: 70px;
+    }
+    &__text {
+        color: #00515c;
+        font-size: 30px;
+    }
+}

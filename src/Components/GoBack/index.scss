@@ -1,0 +1,26 @@
+.back {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  &__item {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    &:hover {
+      cursor: pointer;
+    }
+    a {
+      text-decoration: none;
+      color: #000000;
+    }
+  }
+}
+@media screen and (max-width:730px) {
+    .back {
+      top:20px;
+      left: 20px;
+    }
+  }

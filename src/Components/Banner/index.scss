@@ -1,0 +1,14 @@
+@import "../../Style/mixin.scss";
+
+.banner {
+    @include align-center;
+    &__img {
+        margin: 26px 0 16px 0;
+        max-width: 600px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+      
+    }
+}

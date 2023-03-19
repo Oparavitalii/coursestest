@@ -1,0 +1,115 @@
+@import "../../Style/mixin.scss";
+
+.details {
+  margin: 10px auto;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__cont {
+    max-width: 1003px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  &__video {
+    @include align-center;
+    max-width:400px ;
+    video {
+      border: 5px solid #f2f2f7;
+      width: 100%;
+      height: 100%;
+  
+    }
+
+  }
+  &__instruction {
+    color:#8e8e93;
+    font-size: 12px;
+  }
+  &__inpicture {
+    border: 1px solid blue;
+    background-color: blue;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  &__title {
+    font-size: 30px;
+    line-height: 32px;
+    color: #081f32;
+    margin-bottom: 48px;
+    text-align: center;
+  }
+  ul {
+    list-style: none;
+    margin: 0 auto;
+  }
+
+  &__lesson {
+    border: 2px solid rgb(164, 164, 255);
+    border-radius: 30px;
+    padding: 10px 30px;
+    color:rgb(37, 37, 46);
+    display: flex;
+    justify-content: space-between;
+    min-width: 350px;
+    
+    .icon {
+      color: blue;
+    }
+    .icon__complited {
+      color: green;
+    }
+  }
+  .open {
+    &:hover {
+    cursor: pointer;
+  }}
+  &__label {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #8e8e93;
+    margin-bottom: 18px;
+    text-align: center;
+  }
+
+}
+.wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media screen and (max-width: 530px) {
+  .details {
+    img {
+      width: 150px;
+      height: 150px;
+    }
+    h1 {
+      font-size: 20px;
+      line-height: 30px;
+      margin-top: 40px;
+    }
+    h3 {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      color: #081f32;
+      margin-bottom: 2px;
+    }
+    span {
+      display: block;
+      font-size: 14px;
+      line-height: 20px;
+      color: #6e798c;
+      border-bottom: 1px solid rgba(33, 33, 33, 0.08);
+      margin-bottom: 10px;
+    }
+  }
+}
