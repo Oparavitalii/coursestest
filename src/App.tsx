@@ -37,7 +37,7 @@ function App() {
   const handlerClose = () => {
     dispatch(setPictureInPicture(false));
   };
-  console.log({ coursesData, courseData, token, selectedId });
+ 
   return (
     <div className="App">
       {isPictureInPicture && (
